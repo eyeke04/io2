@@ -1,16 +1,31 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
-import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
-import { ItemDetailsPage } from '../pages/item-details/item-details';
-import { ListPage } from '../pages/list/list';
+
+import { ContactsPage } from '../pages/contacts/contacts';
+import { LoginPage } from '../pages/login/login';
+import { NewTxPage } from '../pages/new-tx/new-tx';
+import { SearchContactPage } from '../pages/search-contact/search-contact';
+import { SearchTxPage } from '../pages/search-tx/search-tx';
+import { SignupPage } from '../pages/signup/signup';
+import { SingleContactPage } from '../pages/single-contact/single-contact';
+import { SingleTxPage } from '../pages/single-tx/single-tx';
+import { SettingsPage } from '../pages/settings/settings';
+import { TransactionsPage } from '../pages/transactions/transactions';
 
 @NgModule({
   declarations: [
     MyApp,
-    HelloIonicPage,
-    ItemDetailsPage,
-    ListPage
+    ContactsPage,
+    LoginPage,
+    NewTxPage,
+    SearchContactPage,
+    SearchTxPage,
+    SignupPage,
+    SingleContactPage,
+    SingleTxPage,
+    SettingsPage,
+    TransactionsPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -18,10 +33,17 @@ import { ListPage } from '../pages/list/list';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HelloIonicPage,
-    ItemDetailsPage,
-    ListPage
+    ContactsPage,
+    LoginPage,
+    NewTxPage,
+    SearchContactPage,
+    SearchTxPage,
+    SignupPage,
+    SingleContactPage,
+    SingleTxPage,
+    SettingsPage,
+    TransactionsPage
   ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
+  providers: []
 })
 export class AppModule {}

@@ -6,13 +6,13 @@ import { StatusBar} from 'ionic-native';
 //commented out for spashscreen. put back later
 //import { StatusBar, Splashscreen } from 'ionic-native';
 import { ContactsPage } from '../pages/contacts/contacts';
-import { LoginPage } from '../pages/login/login';
-import { NewTxPage } from '../pages/new-tx/new-tx';
+//import { LoginPage } from '../pages/login/login';
+//import { NewTxPage } from '../pages/new-tx/new-tx';
 import { SearchContactPage } from '../pages/search-contact/search-contact';
 import { SearchTxPage } from '../pages/search-tx/search-tx';
-import { SignupPage } from '../pages/signup/signup';
-import { SingleContactPage } from '../pages/single-contact/single-contact';
-import { SingleTxPage } from '../pages/single-tx/single-tx';
+//import { SignupPage } from '../pages/signup/signup';
+//import { SingleContactPage } from '../pages/single-contact/single-contact';
+//import { SingleTxPage } from '../pages/single-tx/single-tx';
 import { SettingsPage } from '../pages/settings/settings';
 import { TransactionsPage } from '../pages/transactions/transactions';
 
@@ -36,7 +36,9 @@ export class MyApp {
     this.pages = [
       { title: 'Contacts', component: ContactsPage },
       { title: 'Transactions', component: TransactionsPage },
-      { title: 'Settings', component: SettingsPage }
+      { title: 'Settings', component: SettingsPage },
+      { title: 'Search Contact', component: SearchContactPage },
+      { title: 'Search Tx', component: SearchTxPage }
     ];
   }
 
